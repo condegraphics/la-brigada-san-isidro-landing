@@ -26,3 +26,6 @@
   .main-nav .menu-dropdown a{padding:10px 12px}
   .whatsapp-float{right:18px;bottom:18px}.whatsapp-bubble{display:none}.whatsapp-icon{width:58px;height:58px;font-size:35px}
 }
+.button-outline{background:transparent;border:1px solid currentColor}.button-outline-gold{color:var(--gold)}.button-outline-gold:hover{background:var(--gold);color:var(--ink)}.button-outline-dark{color:var(--ink)}.button-outline-dark:hover{background:var(--ink);color:var(--gold)}
+.visit-details .button{text-decoration:none}.ritual-copy .button{margin-top:18px}
+.whatsapp-icon{font-size:30px;transform:none}.whatsapp-float:hover .whatsapp-icon{transform:scale(1.06)}
