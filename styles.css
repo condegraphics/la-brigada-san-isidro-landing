@@ -7,6 +7,8 @@
 
 /* Refinements: balanced desktop headings, carta dropdown and direct WhatsApp contact. */
 .section-heading h2,.ritual-copy h2,.wine-copy h2{font-size:clamp(38px,4.4vw,60px);text-wrap:balance;overflow-wrap:normal}
+.hero-context{margin:0 0 22px;color:var(--gold);font-size:clamp(15px,1.5vw,20px);letter-spacing:.08em}
+.visit-logo{width:108px;height:108px;object-fit:contain;margin:0 0 28px}
 .centered{max-width:900px}
 .menu-group{position:relative;height:94px;display:flex;align-items:center}
 .menu-label{cursor:default;white-space:nowrap}
