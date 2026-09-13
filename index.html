@@ -3,10 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="La Brigada San Isidro: parrilla argentina premium en Zona Norte, carnes tan tiernas que se cortan con cuchara y cava de vinos argentinos. Reservá tu mesa.">
+  <meta name="description" content="La Brigada San Isidro: parrilla argentina premium en Zona Norte, cortes seleccionados, cava de vinos y carnes tan tiernas que se cortan con cuchara.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="La Brigada San Isidro">
   <meta name="theme-color" content="#171514">
   <link rel="canonical" href="https://labrigada-sanisidro.com.ar/">
-  <title>La Brigada San Isidro | Parrilla Argentina Premium en Zona Norte</title>
+  <link rel="alternate" href="https://labrigada-sanisidro.com.ar/" hreflang="es-AR">
+  <link rel="alternate" href="https://labrigada-sanisidro.com.ar/" hreflang="x-default">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="La Brigada San Isidro">
+  <meta property="og:title" content="La Brigada San Isidro | Parrilla Argentina en Zona Norte">
+  <meta property="og:description" content="Parrilla argentina premium en San Isidro. Cortes seleccionados, cava de vinos y el ritual del corte con cuchara. Reservá tu mesa.">
+  <meta property="og:url" content="https://labrigada-sanisidro.com.ar/">
+  <meta property="og:image" content="https://labrigada-sanisidro.com.ar/img/hero-parrilla-la-brigada-san-isidro-2026-ok.jpg">
+  <meta property="og:image:alt" content="Parrilla argentina premium de La Brigada San Isidro">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="La Brigada San Isidro | Parrilla Argentina en Zona Norte">
+  <meta name="twitter:description" content="Cortes seleccionados, cava de vinos y la mística de La Brigada en San Isidro. Reservá tu mesa.">
+  <meta name="twitter:image" content="https://labrigada-sanisidro.com.ar/img/hero-parrilla-la-brigada-san-isidro-2026-ok.jpg">
+  <title>La Brigada San Isidro | Parrilla Argentina en Zona Norte</title>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5B9ZMQB964"></script>
   <script>
@@ -41,18 +57,109 @@
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"Restaurant",
-    "name":"La Brigada San Isidro",
-    "url":"https://labrigada-sanisidro.com.ar/",
-    "telephone":"+54 11 5000-6485",
-    "image":"https://labrigada-sanisidro.com.ar/wp-content/uploads/2026/06/la-brigada-san-isidro-parrilla-buenos-aires-2026.jpg",
-    "servesCuisine":"Parrilla argentina",
-    "priceRange":"$$$",
-    "address":{"@type":"PostalAddress","streetAddress":"Av. del Libertador 15900","addressLocality":"San Isidro","addressRegion":"Buenos Aires","addressCountry":"AR"},
-    "openingHoursSpecification":[
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"12:00","closes":"16:00"},
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"20:00","closes":"00:30"}
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Restaurant",
+        "@id": "https://labrigada-sanisidro.com.ar/#restaurant",
+        "name": "La Brigada San Isidro",
+        "url": "https://labrigada-sanisidro.com.ar/",
+        "telephone": "+54 11 5000-6485",
+        "image": [
+          "https://labrigada-sanisidro.com.ar/img/hero-parrilla-la-brigada-san-isidro-2026-ok.jpg",
+          "https://labrigada-sanisidro.com.ar/img/la-brigada-corte-cuchara.jpg",
+          "https://labrigada-sanisidro.com.ar/img/galeria-la-brigada-san-isidro-1.jpg"
+        ],
+        "logo": "https://labrigada-sanisidro.com.ar/img/logo-hero-la-brigada-parrilla.png",
+        "description": "La Brigada San Isidro es una parrilla argentina premium en Zona Norte, ubicada sobre Av. del Libertador 15900, con cortes seleccionados, cava de vinos argentinos y el ritual del corte con cuchara.",
+        "servesCuisine": ["Parrilla argentina", "Carnes argentinas"],
+        "priceRange": "$$$",
+        "acceptsReservations": true,
+        "hasMenu": [
+          "https://labrigada-sanisidro.com.ar/pdf/carta-menu.pdf",
+          "https://labrigada-sanisidro.com.ar/pdf/carta-vinos.pdf",
+          "https://labrigada-sanisidro.com.ar/pdf/carta-vinos-epeciales-nuestra-cava.pdf",
+          "https://labrigada-sanisidro.com.ar/pdf/carta-tragos.pdf"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. del Libertador 15900",
+          "addressLocality": "San Isidro",
+          "addressRegion": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "areaServed": [
+          "San Isidro",
+          "Zona Norte",
+          "Buenos Aires"
+        ],
+        "hasMap": "https://maps.app.goo.gl/wT7D61DDQq83V6EQ8",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "12:00",
+            "closes": "16:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "20:00",
+            "closes": "00:30"
+          }
+        ],
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.apparta.co/la-brigada-san-isidro/reservas/branch"
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Reserva en La Brigada San Isidro"
+          }
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://labrigada-sanisidro.com.ar/#website",
+        "url": "https://labrigada-sanisidro.com.ar/",
+        "name": "La Brigada San Isidro",
+        "inLanguage": "es-AR",
+        "publisher": {
+          "@id": "https://labrigada-sanisidro.com.ar/#restaurant"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://labrigada-sanisidro.com.ar/#webpage",
+        "url": "https://labrigada-sanisidro.com.ar/",
+        "name": "La Brigada San Isidro | Parrilla Argentina en Zona Norte",
+        "description": "Parrilla argentina premium en San Isidro con carnes seleccionadas, cava de vinos y reservas online.",
+        "isPartOf": {
+          "@id": "https://labrigada-sanisidro.com.ar/#website"
+        },
+        "about": {
+          "@id": "https://labrigada-sanisidro.com.ar/#restaurant"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://labrigada-sanisidro.com.ar/img/hero-parrilla-la-brigada-san-isidro-2026-ok.jpg"
+        },
+        "inLanguage": "es-AR"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://labrigada-sanisidro.com.ar/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://labrigada-sanisidro.com.ar/"
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -93,7 +200,7 @@
       </div>
       <div class="container hero-content">
         <p class="hero-context">La mística de San Telmo, ahora en Zona Norte</p>
-        <h1>La mejor carne argentina <em>a la parrilla.</em></h1>
+        <h1>La Brigada San Isidro: <em>parrilla argentina.</em></h1>
         <div class="hero-actions">
           <a class="button button-primary" href="https://www.apparta.co/la-brigada-san-isidro/reservas/branch" target="_blank" rel="noopener" onclick="return gtag_report_conversion(this.href);">Reservá tu mesa</a>
           <a class="button button-ghost" href="#experiencia">Conocé la experiencia</a>
