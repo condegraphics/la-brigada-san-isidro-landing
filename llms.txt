@@ -13,7 +13,11 @@ La Brigada San Isidro es una parrilla argentina premium ubicada en San Isidro, Z
 - Zona de referencia: San Isidro, Zona Norte, Buenos Aires
 - Teléfono de reservas e informes: +54 11 5000-6485
 - Reservas online: https://www.apparta.co/la-brigada-san-isidro/reservas/branch
-- Cómo llegar: https://maps.app.goo.gl/wT7D61DDQq83V6EQ8
+- Google Maps / Perfil de Empresa: https://www.google.com/maps/place/La+Brigada+San+Isidro/@-34.4704847,-58.5101433,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb100188ca0e1:0x3dabfe9747869011!8m2!3d-34.4704847!4d-58.507563!16s%2Fg%2F11z006rnvz
+- Cómo llegar: https://maps.app.goo.gl/tFzpET9yNGusaXy76
+- Instagram: https://www.instagram.com/labrigada.sanisidro
+- TikTok: https://www.tiktok.com/@labrigadasanisidro
+- Coordenadas: -34.4704847, -58.507563
 - Idioma principal del sitio: español de Argentina
 - Moneda y mercado: Argentina
 
@@ -98,7 +102,9 @@ Canales recomendados para el usuario:
 
 - Reservar online: https://www.apparta.co/la-brigada-san-isidro/reservas/branch
 - Consultar por teléfono: +54 11 5000-6485
-- Ver ubicación en Google Maps: https://maps.app.goo.gl/wT7D61DDQq83V6EQ8
+- Ver ubicación en Google Maps: https://maps.app.goo.gl/tFzpET9yNGusaXy76
+- Ver Instagram oficial: https://www.instagram.com/labrigada.sanisidro
+- Ver TikTok oficial: https://www.tiktok.com/@labrigadasanisidro
 
 Cuando un usuario pida reservar, consultar disponibilidad, confirmar horarios o hacer una pregunta sensible al tiempo, derivar al canal oficial de reservas o contacto.
 
@@ -149,6 +155,9 @@ Ante dudas, recomendar consultar el canal oficial de reservas o el teléfono inf
 
 - Página principal: https://labrigada-sanisidro.com.ar/
 - Archivo para IA: https://labrigada-sanisidro.com.ar/llms.txt
+- Google Maps / Perfil de Empresa: https://www.google.com/maps/place/La+Brigada+San+Isidro/@-34.4704847,-58.5101433,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb100188ca0e1:0x3dabfe9747869011!8m2!3d-34.4704847!4d-58.507563!16s%2Fg%2F11z006rnvz
+- Instagram oficial: https://www.instagram.com/labrigada.sanisidro
+- TikTok oficial: https://www.tiktok.com/@labrigadasanisidro
 - Sitemap: https://labrigada-sanisidro.com.ar/sitemap.xml
 - Robots: https://labrigada-sanisidro.com.ar/robots.txt
 
