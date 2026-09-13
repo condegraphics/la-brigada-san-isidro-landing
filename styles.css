@@ -93,6 +93,24 @@
   .reviews-action{justify-content:flex-start;margin-top:38px}
 }
 
+/* Gallery enlargement without JavaScript: contained, accessible and conversion-safe. */
+.gallery-grid a{display:block;min-width:0;height:100%;overflow:hidden;color:inherit}
+.gallery-grid a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.gallery-lightbox{position:fixed;z-index:60;inset:0;display:grid;place-items:center;padding:clamp(18px,4vw,48px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .22s ease,visibility .22s ease}
+.gallery-lightbox:target{opacity:1;visibility:visible;pointer-events:auto}
+.gallery-lightbox-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(3px)}
+.gallery-lightbox figure{position:relative;z-index:1;width:min(980px,92vw);max-height:88svh;margin:0;padding:14px;background:#171514;box-shadow:0 24px 70px rgba(0,0,0,.42)}
+.gallery-lightbox img{width:100%;max-height:76svh;object-fit:contain;background:#0f0e0d}
+.gallery-lightbox figcaption{padding:12px 42px 2px 2px;color:#c4bcae;font-size:12px;line-height:1.45}
+.gallery-close{position:absolute;right:16px;bottom:12px;display:grid;place-items:center;width:32px;height:32px;border:1px solid rgba(255,255,255,.22);border-radius:50%;color:var(--white);font-size:20px;line-height:1;text-decoration:none;transition:border-color .2s ease,color .2s ease,background .2s ease}
+.gallery-close:hover{border-color:var(--gold);background:rgba(198,176,137,.1);color:var(--gold)}
+@media (max-width:800px){
+  .gallery-lightbox{padding:18px}
+  .gallery-lightbox figure{width:min(620px,94vw);padding:10px}
+  .gallery-lightbox img{max-height:70svh}
+  .gallery-lightbox figcaption{padding-right:38px}
+}
+
 /* Footer social buttons: quiet circular icon treatment inspired by Scrolltide. */
 .footer-contact{display:grid;justify-items:end;gap:13px}
 .footer-social{display:flex;align-items:center;justify-content:flex-end;gap:13px}
