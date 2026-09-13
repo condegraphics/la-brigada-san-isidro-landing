@@ -57,6 +57,7 @@
 .visit-note{max-width:480px!important;color:#4c4338!important;font-size:17px}
 @media (max-width:800px){
   .authority-grid,.tbone-grid{grid-template-columns:1fr;gap:30px}
+  .proof-strip{display:none}
   .proof-strip{grid-template-columns:1fr;margin-top:52px}
   .proof-strip div{border-right:0;border-bottom:1px solid var(--line)}
   .proof-strip div:last-child{border-bottom:0}
