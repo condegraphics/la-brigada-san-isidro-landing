@@ -76,7 +76,7 @@
 .review-source{display:flex;align-items:center;justify-content:flex-end;margin-bottom:18px;color:#514d48}
 .review-source .fa-google{color:#4285F4;font-size:16px;letter-spacing:0;text-transform:none}
 .review-stars{margin-bottom:18px;color:#FBBC05;font-size:15px;letter-spacing:.08em;line-height:1;text-shadow:0 1px 0 rgba(0,0,0,.05)}
-.review-card blockquote{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;margin:0;color:#37322d;font-family:"Playfair Display",serif;font-size:22px;line-height:1.25}
+.review-card blockquote{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;margin:0;color:#37322d;font-family:Roboto,Montserrat,Arial,sans-serif;font-size:16px;font-weight:300;line-height:1.65}
 .review-card footer{display:grid;gap:6px;margin-top:30px;color:#514d48}
 .review-card strong{color:var(--ink);font-size:12px;letter-spacing:.12em;line-height:1.35;text-transform:uppercase}
 .review-card span{font-size:11px;line-height:1.35}
@@ -88,7 +88,7 @@
   .reviews-grid{row-gap:56px}
   .reviews-heading{margin-bottom:32px}
   .review-card{min-height:0;padding:32px 28px}
-  .review-card blockquote{font-size:26px}
+  .review-card blockquote{font-size:16px;line-height:1.7}
   .review-card footer{display:grid;gap:5px;margin-top:34px}
   .reviews-action{justify-content:flex-start;margin-top:38px}
 }
