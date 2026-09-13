@@ -1,0 +1,14 @@
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Serve real files and folders normally: img, pdf, css, js, robots.txt and sitemap.xml.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Send any legacy or missing URL to the onepage.
+RewriteRule ^.*$ /index.html [L]
+</IfModule>
