@@ -7,7 +7,8 @@
 
 /* Refinements: balanced desktop headings, carta dropdown and direct WhatsApp contact. */
 .section-heading h2,.ritual-copy h2,.wine-copy h2{font-size:clamp(38px,4.4vw,60px);text-wrap:balance;overflow-wrap:normal}
-.hero-context{margin:0 0 22px;color:var(--gold);font-size:clamp(15px,1.5vw,20px);letter-spacing:.08em}
+.hero-content{text-align:center;padding-top:80px}.hero-content .hero-actions{justify-content:center}.hero-context{margin:0 0 16px;color:var(--gold);font-family:Montserrat,Arial,sans-serif;font-size:clamp(13px,1.25vw,18px);font-weight:600;font-style:normal;letter-spacing:.08em;line-height:1.4}.hero h1{max-width:none;font-size:clamp(42px,5.6vw,86px);white-space:nowrap}
+.hero-content{align-self:end;padding-bottom:105px}
 .visit-logo{width:108px;height:108px;object-fit:contain;margin:0 0 28px}
 .centered{max-width:900px}
 .menu-group{position:relative;height:94px;display:flex;align-items:center}
@@ -31,3 +32,4 @@
 .button-outline{background:transparent;border:1px solid currentColor}.button-outline-gold{color:var(--gold)}.button-outline-gold:hover{background:var(--gold);color:var(--ink)}.button-outline-dark{color:var(--ink)}.button-outline-dark:hover{background:var(--ink);color:var(--gold)}
 .visit-details .button{text-decoration:none}.ritual-copy .button{margin-top:18px}
 .whatsapp-icon{font-size:30px;transform:none}.whatsapp-float:hover .whatsapp-icon{transform:scale(1.06)}
+@media (max-width:800px){.hero-content{padding-top:65px;padding-bottom:82px}.hero h1{font-size:clamp(36px,10.5vw,58px);line-height:1.03;white-space:normal}.hero-context{font-size:12px;letter-spacing:.06em}.hero-actions{gap:12px}}
