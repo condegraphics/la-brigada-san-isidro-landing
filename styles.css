@@ -66,10 +66,10 @@
   .visit-note{font-size:16px}
 }
 
-/* Minimal social contact inspired by small, quiet icon systems. */
-.footer-contact{display:grid;justify-items:end;gap:16px}
-.footer-social{display:flex;align-items:center;justify-content:flex-end;gap:14px}
-.footer-social a{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid rgba(255,255,255,.16);border-radius:999px;color:#c4bcae;line-height:1;transition:border-color .25s ease,color .25s ease,background .25s ease,transform .25s ease}
-.footer-social a svg{display:block;width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
-.footer-social a:hover{border-color:var(--gold);background:rgba(198,176,137,.08);color:var(--gold);transform:translateY(-2px)}
-@media (max-width:800px){.footer-contact{justify-items:start}.footer-social{justify-content:flex-start;gap:12px}.footer-social a{width:42px;height:42px}}
+/* Footer social buttons: quiet circular icon treatment inspired by Scrolltide. */
+.footer-contact{display:grid;justify-items:end;gap:13px}
+.footer-social{display:flex;align-items:center;justify-content:flex-end;gap:13px}
+.site-footer .footer-social .social-link{display:inline-flex;align-items:center;justify-content:center;width:43px;height:43px;border:1px solid rgba(255,255,255,.13);border-radius:50%;color:#d4cec4;background:transparent;font-size:17px;line-height:1;text-decoration:none;transition:border-color .22s ease,color .22s ease,background-color .22s ease,transform .22s ease}
+.site-footer .footer-social .social-link i{display:block;width:1em;height:1em;line-height:1;text-align:center}
+.site-footer .footer-social .social-link:hover{border-color:var(--gold);background-color:rgba(198,176,137,.08);color:var(--gold);transform:translateY(-2px)}
+@media (max-width:800px){.footer-contact{justify-items:start}.footer-social{justify-content:flex-start;gap:12px}.site-footer .footer-social .social-link{width:42px;height:42px;font-size:16px}}
