@@ -115,6 +115,6 @@
 .footer-contact{display:grid;justify-items:end;gap:13px}
 .footer-social{display:flex;align-items:center;justify-content:flex-end;gap:13px}
 .site-footer .footer-social .social-link{display:inline-flex;align-items:center;justify-content:center;width:43px;height:43px;border:1px solid rgba(255,255,255,.13);border-radius:50%;color:#d4cec4;background:transparent;font-size:17px;line-height:1;text-decoration:none;transition:border-color .22s ease,color .22s ease,background-color .22s ease,transform .22s ease}
-.site-footer .footer-social .social-link i{display:block;width:1em;height:1em;line-height:1;text-align:center}
+.site-footer .footer-social .social-link .social-icon{display:block;width:1em;height:1em;fill:currentColor;line-height:1;text-align:center}
 .site-footer .footer-social .social-link:hover{border-color:var(--gold);background-color:rgba(198,176,137,.08);color:var(--gold);transform:translateY(-2px)}
 @media (max-width:800px){.footer-contact{justify-items:start}.footer-social{justify-content:flex-start;gap:12px}.site-footer .footer-social .social-link{width:42px;height:42px;font-size:16px}}
