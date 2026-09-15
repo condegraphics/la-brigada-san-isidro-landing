@@ -22,7 +22,7 @@
 .menu-dropdown a:hover{background:rgba(198,176,137,.14)}
 .menu-dropdown span{color:var(--gold);font-size:9px}
 .whatsapp-float{position:fixed;z-index:20;right:28px;bottom:28px;display:flex;align-items:center;gap:10px}
-.whatsapp-icon{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#25d366;color:#fff;font-family:Arial,sans-serif;font-size:31px;font-weight:700;line-height:1;box-shadow:0 10px 26px rgba(37,211,102,.28);transition:transform .25s ease,box-shadow .25s ease}
+.whatsapp-icon{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#25d366;color:#fff;font-family:Arial,sans-serif;font-size:31px;font-weight:700;line-height:1;box-shadow:0 10px 26px rgba(37,211,102,.28);transition:transform .25s ease,box-shadow .25s ease}.whatsapp-icon .social-icon{display:block;width:1em;height:1em;fill:currentColor}
 .whatsapp-float:hover .whatsapp-icon{transform:scale(1.06);box-shadow:0 12px 30px rgba(37,211,102,.42)}
 .whatsapp-bubble{padding:9px 15px;border-radius:22px;background:#fff;color:#3f3b37;font-size:12px;box-shadow:0 8px 25px rgba(0,0,0,.13);white-space:nowrap}
 @media (max-width:800px){
@@ -74,7 +74,7 @@
 .reviews-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;align-items:stretch}
 .review-card{display:flex;min-height:280px;flex-direction:column;justify-content:space-between;padding:24px 20px;border-top:1px solid rgba(23,21,20,.2);border-bottom:1px solid rgba(23,21,20,.2);background:rgba(255,255,255,.24)}
 .review-source{display:flex;align-items:center;justify-content:flex-end;margin-bottom:18px;color:#514d48}
-.review-source .fa-google{color:#4285F4;font-size:16px;letter-spacing:0;text-transform:none}
+.review-source .social-icon{color:#4285F4;width:1em;height:1em;fill:currentColor;display:block}
 .review-stars{margin-bottom:18px;color:#FBBC05;font-size:15px;letter-spacing:.08em;line-height:1;text-shadow:0 1px 0 rgba(0,0,0,.05)}
 .review-card blockquote{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;margin:0;color:#37322d;font-family:Roboto,Montserrat,Arial,sans-serif;font-size:16px;font-weight:300;line-height:1.65}
 .review-card footer{display:grid;gap:6px;margin-top:30px;color:#514d48}
@@ -115,6 +115,6 @@
 .footer-contact{display:grid;justify-items:end;gap:13px}
 .footer-social{display:flex;align-items:center;justify-content:flex-end;gap:13px}
 .site-footer .footer-social .social-link{display:inline-flex;align-items:center;justify-content:center;width:43px;height:43px;border:1px solid rgba(255,255,255,.13);border-radius:50%;color:#d4cec4;background:transparent;font-size:17px;line-height:1;text-decoration:none;transition:border-color .22s ease,color .22s ease,background-color .22s ease,transform .22s ease}
-.site-footer .footer-social .social-link i{display:block;width:1em;height:1em;line-height:1;text-align:center}
+.site-footer .footer-social .social-link .social-icon{display:block;width:1em;height:1em;fill:currentColor;line-height:1;text-align:center}
 .site-footer .footer-social .social-link:hover{border-color:var(--gold);background-color:rgba(198,176,137,.08);color:var(--gold);transform:translateY(-2px)}
 @media (max-width:800px){.footer-contact{justify-items:start}.footer-social{justify-content:flex-start;gap:12px}.site-footer .footer-social .social-link{width:42px;height:42px;font-size:16px}}
