@@ -118,3 +118,8 @@
 .site-footer .footer-social .social-link i{display:block;width:1em;height:1em;line-height:1;text-align:center}
 .site-footer .footer-social .social-link:hover{border-color:var(--gold);background-color:rgba(198,176,137,.08);color:var(--gold);transform:translateY(-2px)}
 @media (max-width:800px){.footer-contact{justify-items:start}.footer-social{justify-content:flex-start;gap:12px}.site-footer .footer-social .social-link{width:42px;height:42px;font-size:16px}}
+
+@media (min-width:801px){
+  .hero-brand{top:clamp(110px,13vh,150px);gap:12px}
+  .hero-content{top:clamp(390px,50vh,500px)!important}
+}
