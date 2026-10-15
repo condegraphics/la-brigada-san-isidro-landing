@@ -121,5 +121,7 @@
 
 @media (min-width:801px){
   .hero-brand{top:clamp(110px,13vh,150px);gap:12px}
-  .hero-content{top:clamp(390px,50vh,500px)!important}
+  .hero{min-height:min(760px,100svh)}
+  .hero-content{top:auto!important;bottom:clamp(56px,8vh,82px)!important}
+  .scroll-cue{display:none}
 }
