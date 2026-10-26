@@ -1,0 +1,18 @@
+# Secretos y credenciales - NUNCA subir
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+credentials
+.netrc
+.npmrc
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Dependencias
+node_modules/
+vendor/
