@@ -22,15 +22,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      # Solo se publica lo que debe ser publico: quedan fuera .git, .github,
+      # .docs, .gitignore y .htaccess (este ultimo es exclusivo del hosting Apache).
+      - name: Stage public site
+        run: |
+          mkdir -p _site
+          rsync -a --delete \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '.gitignore' \
+            --exclude '.htaccess' \
+            --exclude '_site' \
+            ./ _site/
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: "_site"
 
       - name: Deploy to GitHub Pages
         id: deployment
