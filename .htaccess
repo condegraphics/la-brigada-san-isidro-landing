@@ -4,14 +4,19 @@ DirectoryIndex index.html
 RewriteEngine On
 RewriteBase /
 
-# Serve real files and folders normally: img, pdf, css, js, robots.txt and sitemap.xml.
+# Servir archivos y carpetas reales: img, pdf, css, js, robots.txt, sitemap.xml, llms.txt
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
-
-# Send any legacy or missing URL to the onepage.
-RewriteRule ^.*$ /index.html [L]
 </IfModule>
+
+# ============================================================================
+# 404 REAL - Antes, toda URL inexistente rewritteaba a /index.html con HTTP 200
+# (soft-404): Google indexaba un espacio infinito de URLs y las tomaba por
+# paginas validas, duplicando contenido y quemando crawl budget.
+# Ahora cada ruta desconocida responde 404 con su pagina de error.
+# ============================================================================
+ErrorDocument 404 /404.html
 
 # ============================================================================
 # HARDENING CONDE GRAPHICS - Bloquear documentos internos
