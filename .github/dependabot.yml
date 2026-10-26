@@ -1,0 +1,12 @@
+version: 2
+
+updates:
+  # Mantiene las GitHub Actions fijadas a versiones parcheadas (supply chain).
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "ci"
+    labels:
+      - "dependencies"
