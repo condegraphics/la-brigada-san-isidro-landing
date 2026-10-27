@@ -56,7 +56,17 @@ jobs:
       # en el artefacto. Los archivos del repo (y por lo tanto Hostinger) no cambian.
       - name: Marcar maqueta como noindex (solo artifact de Pages)
         run: |
-          printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
+          printf '%s\n' \
+            '# Maqueta de staging: Googlebot rastrea para leer el noindex y desindexar.' \
+            '# Los crawlers generativos quedan bloqueados (la maqueta no es la fuente oficial).' \
+            'User-agent: *' \
+            'Allow: /' \
+            'User-agent: GPTBot' 'Disallow: /' \
+            'User-agent: OAI-SearchBot' 'Disallow: /' \
+            'User-agent: ClaudeBot' 'Disallow: /' \
+            'User-agent: PerplexityBot' 'Disallow: /' \
+            'User-agent: Google-Extended' 'Disallow: /' \
+            'User-agent: CCBot' 'Disallow: /' > _site/robots.txt
           for f in _site/*.html; do
             perl -0pi -e '
               s{<meta\s+name="robots"\s+content="[^"]*"[^>]*>}{<meta name="robots" content="noindex, nofollow">}i
