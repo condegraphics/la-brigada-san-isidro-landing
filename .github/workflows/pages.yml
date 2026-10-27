@@ -33,7 +33,7 @@ jobs:
       # raiz desindexaria el dominio real, no la maqueta.
       - name: Verificar robots.txt de produccion
         run: |
-          if [ -f robots.txt ] && grep -qE '^\s*Disallow:\s*/\s*$' robots.txt; then
+          if [ -f robots.txt ] && grep -qE '^[[:space:]]*Disallow:[[:space:]]*/\*?[[:space:]]*$' robots.txt; then
             echo "::error::robots.txt de la raiz bloquea todo el sitio y se publicaria en el dominio real."
             exit 1
           fi
