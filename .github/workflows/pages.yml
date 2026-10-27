@@ -67,7 +67,7 @@ jobs:
           grep -o 'name="robots" content="[^"]*"' _site/index.html
 
       - name: Upload static files
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
