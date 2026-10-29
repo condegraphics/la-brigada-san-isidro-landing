@@ -10,6 +10,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://labrigada-sanisidro.com.ar/eventos/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://labrigada-sanisidro.com.ar/eventos/img/hero-la-brigada-san-isidro-eventos.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://labrigada-sanisidro.com.ar/llms.txt</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>

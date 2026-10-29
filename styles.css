@@ -125,3 +125,129 @@
   .hero-content{top:auto!important;bottom:clamp(56px,8vh,82px)!important}
   .scroll-cue{display:none}
 }
+
+/* ============================================================
+   EVENTOS CORPORATIVOS — /eventos/
+   Componentes nuevos. Reusan los tokens de marca: ink, paper,
+   gold, muted, line. Todos prefijados .evt- para no colisionar
+   con los estilos de la home.
+   ============================================================ */
+
+/* Hero de eventos: el H1 es más largo que el de la home, asi que
+   se reescriben el clamp y el nowrap. */
+.evt-hero h1{white-space:normal;max-width:920px;margin:0 auto 22px;font-size:clamp(34px,4.6vw,62px);line-height:1.06;text-wrap:balance}
+.evt-hero .hero-context{max-width:760px;margin:0 auto 14px}
+.evt-hero .hero-lead{max-width:640px;margin:0 auto 32px}
+@media (max-width:800px){.evt-hero h1{font-size:clamp(30px,8.4vw,42px)}.evt-hero .hero-lead{font-size:16px}}
+
+/* Tira de datos (26 / 1 fecha / a medida) */
+.evt-facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:64px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.evt-facts div{display:flex;flex-direction:column;gap:6px;padding:26px 24px;border-right:1px solid var(--line)}
+.evt-facts div:last-child{border-right:0}
+.evt-facts strong{font-family:"Playfair Display",serif;font-size:30px;font-weight:500;line-height:1.1}
+.evt-facts span{color:var(--muted);font-size:12px;line-height:1.5}
+@media (max-width:800px){.evt-facts{grid-template-columns:1fr;margin-top:44px}.evt-facts div{border-right:0;border-bottom:1px solid var(--line)}.evt-facts div:last-child{border-bottom:0}}
+
+/* Bloque del salon: copy + foto */
+.evt-salon-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(42px,8vw,110px);align-items:center}
+.evt-h2{margin:0 0 24px;font-family:"Playfair Display",serif;font-size:clamp(34px,4.2vw,52px);font-weight:500;line-height:1.08;letter-spacing:-.025em}
+.evt-salon-copy{max-width:560px;color:#514d48;font-size:17px}
+.evt-salon-copy p{margin:0 0 20px}
+.evt-salon-media{position:relative;margin:0}
+.evt-salon-media img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.evt-salon-media figcaption{padding:13px 0 0;color:var(--muted);font-size:12px}
+@media (max-width:800px){.evt-salon-grid{grid-template-columns:1fr;gap:34px}.evt-salon-copy{font-size:16px}}
+
+/* Los tres diferenciales */
+.evt-diff{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px);margin-top:64px}
+.evt-diff article{display:flex;flex-direction:column;gap:12px;padding-top:26px;border-top:1px solid var(--line)}
+.evt-diff h3{margin:0;font-family:"Playfair Display",serif;font-size:24px;font-weight:500;line-height:1.2}
+.evt-diff p{margin:0;color:#514d48;font-size:16px;line-height:1.7}
+.evt-diff span{color:#8e7650;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.evt-dark .evt-diff p,.section-dark .evt-diff p{color:#c2beb8}
+.evt-dark .evt-diff span,.section-dark .evt-diff span{color:var(--gold)}
+.evt-dark .evt-diff article,.section-dark .evt-diff article{border-top-color:rgba(198,176,137,.34)}
+@media (max-width:800px){.evt-diff{grid-template-columns:1fr;gap:30px;margin-top:44px}}
+
+/* Formatos de evento */
+.evt-formats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:56px;background:var(--line);border:1px solid var(--line)}
+.evt-formats div{background:var(--paper);padding:30px 26px}
+.evt-formats h3{margin:0 0 8px;font-family:"Playfair Display",serif;font-size:21px;font-weight:500;line-height:1.25}
+.evt-formats p{margin:0;color:var(--muted);font-size:14px;line-height:1.65}
+@media (max-width:800px){.evt-formats{grid-template-columns:1fr}.evt-formats div{padding:24px 20px}}
+
+/* Tira de galeria */
+.evt-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
+.evt-gallery figure{margin:0}
+.evt-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.evt-gallery figcaption{padding:12px 0 0;color:var(--muted);font-size:12px}
+@media (max-width:800px){.evt-gallery{grid-template-columns:1fr;gap:22px}}
+
+/* Como reservar: 3 pasos */
+.evt-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,52px);margin-top:56px}
+.evt-steps div{display:flex;flex-direction:column;gap:10px}
+.evt-steps b{color:var(--gold-deep,#8e7650);font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.evt-steps h3{margin:0;font-family:"Playfair Display",serif;font-size:22px;font-weight:500;line-height:1.25}
+.evt-steps p{margin:0;color:var(--muted);font-size:15px;line-height:1.7}
+@media (max-width:800px){.evt-steps{grid-template-columns:1fr;gap:28px;margin-top:40px}}
+
+/* --- Bloque oscuro: reservas anticipadas + formulario --- */
+.evt-dark{background:var(--ink);color:var(--white)}
+.evt-dark .section-heading h2{color:var(--white)}
+.evt-dark .section-heading>p:last-child{color:#c2beb8}
+.evt-dark .eyebrow{color:var(--gold)}
+
+/* Formulario: replica la resolucion del modelo (tarjeta translucida
+   sobre fondo oscuro, grid de 2 columnas, micro-labels, boton ancho).
+   Reinterpretada con los tokens de La Brigada. */
+.evt-form-wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,84px);align-items:start}
+.evt-form-aside p{color:#c2beb8;font-size:17px;line-height:1.7}
+.evt-form-aside ul{display:flex;flex-direction:column;gap:14px;margin:30px 0 0;padding:0;list-style:none}
+.evt-form-aside li{display:flex;gap:12px;align-items:flex-start;color:#e6e2dc;font-size:15px;line-height:1.6}
+.evt-form-aside li i{color:var(--gold);font-size:15px;margin-top:4px}
+.evt-form-aside a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+
+.evt-form{background:rgba(255,255,255,.04);border:1px solid rgba(198,176,137,.28);border-radius:14px;padding:34px}
+.evt-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.evt-field{display:flex;flex-direction:column;gap:8px}
+.evt-field--full{grid-column:1/-1}
+.evt-field span{color:var(--gold);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.evt-field input,.evt-field select,.evt-field textarea{width:100%;padding:13px 14px;background:rgba(0,0,0,.3);border:1px solid rgba(198,176,137,.22);border-radius:8px;color:var(--paper);font-family:Montserrat,Arial,sans-serif;font-size:15px;line-height:1.5;outline:none;transition:border-color .25s ease,background .25s ease}
+.evt-field textarea{resize:vertical;min-height:104px}
+.evt-field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#c6b089 50%),linear-gradient(135deg,#c6b089 50%,transparent 50%);background-position:calc(100% - 20px) 22px,calc(100% - 14px) 22px;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+.evt-field option{background:#171514;color:#f5f3ef}
+.evt-field input::placeholder,.evt-field textarea::placeholder{color:rgba(245,243,239,.42)}
+.evt-field input:focus,.evt-field select:focus,.evt-field textarea:focus{border-color:var(--gold);background:rgba(0,0,0,.42)}
+.evt-form-hint{color:#a9a29a;font-size:12px;margin:2px 0 0}
+.evt-submit{width:100%;margin-top:24px;padding:16px 22px;background:var(--gold);color:var(--ink);border:none;border-radius:999px;font-family:Montserrat,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:background .25s ease,transform .25s ease}
+.evt-submit:hover{background:#dfc99e;transform:translateY(-2px)}
+.evt-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.evt-form-msg{display:none;margin-top:18px;padding:14px 16px;border-radius:8px;font-size:14px;line-height:1.55;text-align:center}
+.evt-form-msg.is-visible{display:block}
+.evt-form-msg--ok{background:rgba(198,176,137,.14);border:1px solid rgba(198,176,137,.4);color:#eadfc6}
+.evt-form-msg--err{background:rgba(180,60,50,.16);border:1px solid rgba(220,110,95,.45);color:#f0c4bc}
+.evt-form-noscript{margin-top:18px;color:#c2beb8;font-size:14px}
+.evt-form-noscript a{color:var(--gold)}
+@media (max-width:800px){.evt-form-wrap{grid-template-columns:1fr;gap:34px}.evt-form{padding:24px 20px}.evt-form-grid{grid-template-columns:1fr}.evt-form-grid .evt-field{grid-column:1/-1}}
+
+/* FAQ */
+.evt-faq{display:grid;grid-template-columns:repeat(2,1fr);gap:0 clamp(30px,5vw,64px);margin-top:52px}
+.evt-faq details{border-top:1px solid var(--line)}
+.evt-faq details:last-child,.evt-faq details:nth-last-child(2){border-bottom:1px solid var(--line)}
+.evt-faq summary{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0;cursor:pointer;list-style:none;font-family:"Playfair Display",serif;font-size:19px;font-weight:500;line-height:1.35}
+.evt-faq summary::-webkit-details-marker{display:none}
+.evt-faq summary::after{content:"+";flex:none;color:var(--gold);font-family:Montserrat,Arial,sans-serif;font-size:24px;font-weight:300;transition:transform .25s ease}
+.evt-faq details[open] summary::after{content:"\2212"}
+.evt-faq details p{margin:0 0 24px;color:var(--muted);font-size:15px;line-height:1.7}
+@media (max-width:800px){.evt-faq{grid-template-columns:1fr}.evt-faq details:nth-last-child(2){border-bottom:0}}
+
+/* Teaser de eventos corporativos en la home */
+.events-teaser{background:#ebe8e2}
+.events-teaser-inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(28px,5vw,72px)}
+.events-teaser-copy{max-width:720px}
+.events-teaser h2{margin:0 0 16px;font-family:"Playfair Display",serif;font-size:clamp(32px,4vw,50px);font-weight:500;line-height:1.1;letter-spacing:-.025em}
+.events-teaser p{margin:0;color:#514d48;font-size:17px;line-height:1.7}
+.events-teaser .button{flex:none}
+.footer-events-link{display:block;margin-top:6px;color:var(--gold);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.footer-events-link:hover{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:800px){.events-teaser-inner{flex-direction:column;align-items:flex-start}.events-teaser p{font-size:16px}}
