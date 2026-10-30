@@ -246,6 +246,18 @@
     .evt-hero .hero-content .hero-context{margin:0 auto 14px;text-align:center}
     .evt-hero .hero-content h1{margin:0 auto;text-align:center}
     .evt-hero .hero-actions-row{justify-content:center}
+    /* Overlay del hero reducido 60% (alfas x0.4) */
+    .evt-hero .hero-overlay{background:radial-gradient(ellipse 62% 58% at 50% 50%,rgba(23,21,20,.31) 0%,rgba(23,21,20,.25) 55%,rgba(23,21,20,.14) 100%)}
+    /* Menú fijo: sticky + margen negativo para no alterar el alto/posición del hero */
+    .site-header{position:sticky;top:0;z-index:50;margin-bottom:-95px;background:rgba(23,21,20,.88);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+    @supports (animation-timeline:scroll()){
+      .site-header{background:rgba(23,21,20,0);-webkit-backdrop-filter:none;backdrop-filter:none;animation:evtNavBg linear both;animation-timeline:scroll();animation-range:0 120px}
+    }
+    @keyframes evtNavBg{to{background:rgba(23,21,20,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}}
+    @media (max-width:800px){.site-header{margin-bottom:-79px}}
+    html{scroll-padding-top:96px}
+    .evt-hero .hero-context{color:#e0cba3;text-shadow:0 1px 10px rgba(0,0,0,.65)}
+    .evt-hero .hero-brand span,.evt-hero h1{text-shadow:0 2px 16px rgba(0,0,0,.55)}
   </style>
 </head>
 <body>
