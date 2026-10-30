@@ -251,3 +251,30 @@
 .footer-events-link{display:block;margin-top:6px;color:var(--gold);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
 .footer-events-link:hover{text-decoration:underline;text-underline-offset:4px}
 @media (max-width:800px){.events-teaser-inner{flex-direction:column;align-items:flex-start}.events-teaser p{font-size:16px}}
+
+/* ============================================================
+   Hero de eventos — imagen a tamano real.
+   La hero del home estira la imagen a 100svh con object-fit:cover
+   (en pantallas grandes eso escala la foto hacia arriba y se ve
+   pixelada). En /eventos/ la imagen se muestra a su proporcion real
+   (1920x760), nunca se escala mas alla de su ancho natural y nunca
+   se recorta: se centra sobre el fondo tinta y el alto lo define el
+   contenido. El logo de la casa achicado un 20%.
+   ============================================================ */
+@keyframes evtHeroZoom{from{transform:translate(-50%,-50%) scale(1.06)}to{transform:translate(-50%,-50%) scale(1)}}
+.evt-hero .hero-brand img{width:clamp(90px,8.8vw,128px)}
+.evt-hero .hero-brand span{font-size:clamp(20px,2.56vw,37px)}
+/* Velo sutil para sostener el contraste del titular sobre el brindis,
+   sin tocar la foto. Solo en el hero de eventos. */
+.evt-hero .hero-overlay{display:block!important;background:radial-gradient(ellipse 62% 58% at 50% 50%,rgba(23,21,20,.78) 0%,rgba(23,21,20,.62) 55%,rgba(23,21,20,.34) 100%)}
+@media (min-width:801px){
+  .evt-hero{position:relative;height:auto;min-height:min(39.6vw,760px);max-height:none;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;background:#272321;padding:clamp(92px,8.5vw,140px) 0 clamp(76px,7vw,116px)}
+  .evt-hero .hero-image{position:absolute;top:50%;left:50%;width:100%;max-width:1920px;height:auto;transform:translate(-50%,-50%);object-fit:contain;animation:none}
+  .evt-hero .hero-brand{position:relative;top:auto;left:auto;transform:none;margin-bottom:clamp(18px,2.2vw,34px)}
+  .evt-hero .hero-content{position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;transform:none!important;align-self:auto!important;padding:0}
+}
+@media (max-width:800px){
+  .evt-hero .hero-brand img{width:clamp(74px,21.6vw,102px)}
+  .evt-hero .hero-brand span{font-size:clamp(18px,5.2vw,25px)}
+  .evt-hero .hero-context{display:block!important;font-size:12px;letter-spacing:.14em;margin:0 0 14px}
+}
