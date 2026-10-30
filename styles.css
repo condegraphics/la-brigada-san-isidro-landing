@@ -262,19 +262,24 @@
    contenido. El logo de la casa achicado un 20%.
    ============================================================ */
 @keyframes evtHeroZoom{from{transform:translate(-50%,-50%) scale(1.06)}to{transform:translate(-50%,-50%) scale(1)}}
+.evt-hero .hero-context{font-family:Montserrat,Arial,sans-serif;font-size:11px;font-weight:600;line-height:19px;letter-spacing:2.2px;color:#8e7650;margin:0 0 18px}
 .evt-hero .hero-brand img{width:clamp(90px,8.8vw,128px)}
 .evt-hero .hero-brand span{font-size:clamp(20px,2.56vw,37px)}
 /* Velo sutil para sostener el contraste del titular sobre el brindis,
    sin tocar la foto. Solo en el hero de eventos. */
 .evt-hero .hero-overlay{display:block!important;background:radial-gradient(ellipse 62% 58% at 50% 50%,rgba(23,21,20,.78) 0%,rgba(23,21,20,.62) 55%,rgba(23,21,20,.34) 100%)}
 @media (min-width:801px){
-  .evt-hero{position:relative;height:auto;min-height:min(39.6vw,760px);max-height:none;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;background:#272321;padding:clamp(92px,8.5vw,140px) 0 clamp(76px,7vw,116px)}
+  .evt-hero{position:relative;height:auto;min-height:min(39.6vw,760px);max-height:none;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;background:#272321;padding:clamp(34px,3.8vw,58px) 0 clamp(28px,3vw,46px)}
   .evt-hero .hero-image{position:absolute;top:50%;left:50%;width:100%;max-width:1920px;height:auto;transform:translate(-50%,-50%);object-fit:contain;animation:none}
-  .evt-hero .hero-brand{position:relative;top:auto;left:auto;transform:none;margin-bottom:clamp(18px,2.2vw,34px)}
-  .evt-hero .hero-content{position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;transform:none!important;align-self:auto!important;padding:0}
+  .evt-hero .hero-brand{position:relative;top:auto;left:auto;transform:none;flex:none;margin:0 0 clamp(16px,2.2vw,30px)}
+  .evt-hero .hero-content{position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;transform:none!important;align-self:auto!important;padding:0;flex:none}
+  .evt-hero .hero-content h1{white-space:nowrap;max-width:none;text-wrap:normal;font-size:clamp(32px,3.95vw,56px);line-height:1.08;letter-spacing:-.02em;margin:0}
+  .evt-hero .hero-actions-row{position:relative;z-index:2;flex:none;justify-content:center;margin:clamp(20px,2.6vw,40px) auto 0}
 }
 @media (max-width:800px){
   .evt-hero .hero-brand img{width:clamp(74px,21.6vw,102px)}
   .evt-hero .hero-brand span{font-size:clamp(18px,5.2vw,25px)}
-  .evt-hero .hero-context{display:block!important;font-size:12px;letter-spacing:.14em;margin:0 0 14px}
+  .evt-hero .hero-context{display:block!important;margin:0 0 16px}
+  .evt-hero .hero-actions-row{position:absolute;left:18px;right:18px;bottom:62px;z-index:2;width:auto;margin:0;flex-direction:column;gap:12px}
+  .evt-hero .hero-actions-row .button{width:100%;text-align:center}
 }
