@@ -240,6 +240,13 @@
     ]
   }
   </script>
+  <style>
+    .evt-hero .hero-content{display:flex;flex-direction:column;align-items:center;text-align:center;width:min(calc(100% - 36px),1100px);margin-inline:auto}
+    .evt-hero .hero-content .hero-brand{position:static;transform:none;margin:0 0 6px;gap:4px}
+    .evt-hero .hero-content .hero-context{margin:0 auto 14px;text-align:center}
+    .evt-hero .hero-content h1{margin:0 auto;text-align:center}
+    .evt-hero .hero-actions-row{justify-content:center}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -275,11 +282,11 @@
     <section class="hero evt-hero">
       <img class="hero-image" src="img/hero-la-brigada-san-isidro-eventos-corporativos.jpg" alt="Brindis de champagne con confeti en un evento corporativo de fin de año en La Brigada San Isidro" width="1920" height="760">
       <div class="hero-overlay"></div>
-      <div class="hero-brand" aria-label="La Brigada">
-        <img src="../img/logo-hero-la-brigada-parrilla.png" alt="Logo de La Brigada" width="160" height="160">
-        <span>LA BRIGADA</span>
-      </div>
       <div class="container hero-content">
+        <div class="hero-brand" aria-label="La Brigada">
+          <img src="../img/logo-hero-la-brigada-parrilla.png" alt="Logo de La Brigada" width="160" height="160">
+          <span>LA BRIGADA</span>
+        </div>
         <p class="hero-context">Eventos corporativos en La Brigada San Isidro</p>
         <h1>Cada encuentro merece <em>un lugar único.</em></h1>
       </div>
